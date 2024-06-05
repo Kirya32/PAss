@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+            <TextBlock FontFamily="Courier New">Длина пароля</TextBlock>
+            <TextBox Name="tbLeinght"></TextBox>
+        </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="Courier New">Уровень сложности</TextBlock>
+                <ComboBox  Name="CbDiff" SelectedItem="0">
+                <ComboBoxItem>Лекгий</ComboBoxItem>
+                <ComboBoxItem>Средний</ComboBoxItem>
+                <ComboBoxItem>Сложный</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontFamily="Courier New">Готовый пароль</TextBlock>
+                <TextBox Name="TbBox"></TextBox>
+                <Button Background="Orange" Name="BtnGenerate" FontFamily="Courier New" Click="BtnGenerate_OnClick">Сгенерировать пароль</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
